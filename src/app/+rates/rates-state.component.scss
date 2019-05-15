@@ -1,0 +1,51 @@
+@import 'common';
+
+$padding-sides: 24px;
+$min-form-width: (320 - 2 * $padding-sides);
+
+:host {
+  display: block;
+}
+
+.rs-content {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px $padding-sides;
+
+  @include breakpoint($breakpoint-s) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.rs-form {
+  min-width: 100%;
+
+  @include breakpoint($breakpoint-xxs) {
+    min-width: $min-form-width;
+  }
+
+  @include breakpoint($breakpoint-s) {
+    max-width: $min-form-width;
+  }
+}
+
+.rs-chart {
+  width: calc(100% + #{2 * $padding-sides});
+  margin-left: -#{$padding-sides};
+  margin-right: -#{$padding-sides};
+
+  @include breakpoint($breakpoint-s) {
+    width: calc(100% - #{$min-form-width + $padding-sides});
+    margin-left: $padding-sides;
+    margin-right: 0;
+  }
+}
+
+.rs-error {
+  color: $clr-negative;
+  margin-bottom: 12px;
+  text-align: center;
+}

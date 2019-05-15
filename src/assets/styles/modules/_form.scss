@@ -1,0 +1,12 @@
+.form-group {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__label {
+    font-weight: $text-bold;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,11 @@
+@import 'common';
+
+.vc {
+  &--rise {
+    color: $clr-positive;
+  }
+
+  &--fall {
+    color: $clr-negative;
+  }
+}

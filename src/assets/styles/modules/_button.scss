@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid $clr-border;
+  background-color: $clr-border;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($clr-border, 5%);
+  }
+
+  &:active {
+    background-color: darken($clr-border, 15%);
+  }
+
+  &[disabled] {
+    background-color: #f3f3f3;
+    border-color: #d6d5d5;
+    cursor: not-allowed;
+  }
+}

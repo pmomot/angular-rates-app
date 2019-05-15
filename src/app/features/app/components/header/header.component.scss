@@ -1,0 +1,23 @@
+@import 'common';
+
+:host {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background-color: $clr-brand;
+}
+
+header {
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: $text-medium;
+}
+
+img {
+  width: 48px;
+  margin-right: 8px;
+}

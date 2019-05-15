@@ -1,0 +1,38 @@
+@import 'common';
+
+:host {
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  @include breakpoint ($breakpoint-xs) {
+    padding: 0 4px;
+  }
+
+  @include breakpoint ($breakpoint-s) {
+    padding: 0;
+  }
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 264px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.chart-loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  transition: 0.3s opacity ease-out;
+  background: #fff;
+  align-items: center;
+
+  &.visible {
+    display: flex;
+  }
+}
